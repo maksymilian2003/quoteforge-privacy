@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — QuoteForge</title>
+<style>
+  :root {
+    --navy: #0F1923;
+    --teal: #2AABB3;
+    --teal-light: #E1F5EE;
+    --gold: #FFD060;
+    --text: #1a2332;
+    --text-sec: #6B7280;
+    --border: #E5E7EB;
+    --bg: #F9FAFB;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  /* Header */
+  header {
+    background: var(--navy);
+    padding: 32px 24px 28px;
+    text-align: center;
+  }
+  .logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--teal);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-mark svg { width: 20px; height: 20px; }
+  .logo-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.3px;
+  }
+  .logo-name span { color: var(--teal); }
+  header h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  header p {
+    color: #9BA3AF;
+    font-size: 14px;
+  }
+
+  /* Highlight banner */
+  .highlight-banner {
+    background: var(--teal-light);
+    border-left: 4px solid var(--teal);
+    padding: 16px 20px;
+    margin: 0 auto;
+    max-width: 720px;
+    border-radius: 0 8px 8px 0;
+  }
+  .highlight-banner p {
+    color: #085041;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .highlight-banner span {
+    font-weight: 700;
+  }
+
+  /* Main layout */
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+
+  /* Sections */
+  section {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  section h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  section h2 .icon {
+    width: 28px; height: 28px;
+    border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  section p {
+    color: var(--text-sec);
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+  section p:last-child { margin-bottom: 0; }
+  section ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+  }
+  section ul li {
+    color: var(--text-sec);
+    font-size: 14px;
+    padding: 5px 0 5px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
+  section ul li:last-child { border-bottom: none; }
+  section ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: 600;
+  }
+  strong { color: var(--text); }
+
+  /* Big callout — no data collected */
+  .no-data-box {
+    background: var(--navy);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .no-data-box .big-icon { font-size: 36px; margin-bottom: 12px; }
+  .no-data-box h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .no-data-box p {
+    color: #9BA3AF;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .no-data-box .teal { color: var(--teal); font-weight: 600; }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  th {
+    background: var(--bg);
+    color: var(--text);
+    font-weight: 600;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-sec);
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .tag-no { background: #E1F5EE; color: #085041; }
+  .tag-device { background: #E6F1FB; color: #0C447C; }
+
+  /* Contact */
+  .contact-card {
+    background: var(--navy);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .contact-card h2 { color: #fff; font-size: 17px; margin-bottom: 12px; }
+  .contact-card a { color: var(--teal); text-decoration: none; }
+  .contact-card p { color: #9BA3AF; font-size: 14px; margin-bottom: 6px; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-sec);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--teal); text-decoration: none; }
+
+  /* Updated badge */
+  .updated {
+    display: inline-block;
+    background: var(--teal-light);
+    color: #085041;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 600px) {
+    header { padding: 24px 16px; }
+    main { padding: 20px 16px 48px; }
+    header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <div class="logo-mark">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 15L10 5L16 15" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.5 11h7" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="logo-name">Quote<span>Forge</span></span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: April 2026 &nbsp;·&nbsp; Effective immediately</p>
+</header>
+
+<main>
+
+  <div class="updated">✓ App Store compliant · GDPR aware · No tracking</div>
+
+  <!-- Key message -->
+  <div class="no-data-box">
+    <div class="big-icon">🔒</div>
+    <h2>Your data never leaves your device</h2>
+    <p>QuoteForge stores <span class="teal">all data locally</span> on your iPhone using Apple's CoreData framework. We do not collect, transmit, sell, or share any personal information. No account required. No servers. No analytics.</p>
+  </div>
+
+  <!-- Summary table -->
+  <section>
+    <h2><span class="icon" style="background:#E1F5EE;">📋</span> Data summary at a glance</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data type</th>
+          <th>Collected?</th>
+          <th>Where stored</th>
+          <th>Shared?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Client names & emails</td>
+          <td><span class="tag tag-device">On device only</span></td>
+          <td>Your iPhone (CoreData)</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+        <tr>
+          <td>Business profile & logo</td>
+          <td><span class="tag tag-device">On device only</span></td>
+          <td>Your iPhone (CoreData)</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+        <tr>
+          <td>Estimates & invoices</td>
+          <td><span class="tag tag-device">On device only</span></td>
+          <td>Your iPhone (CoreData)</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+        <tr>
+          <td>Analytics / tracking</td>
+          <td><span class="tag tag-no">Not collected</span></td>
+          <td>—</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+        <tr>
+          <td>Crash reports</td>
+          <td><span class="tag tag-no">Not collected</span></td>
+          <td>—</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+        <tr>
+          <td>Location data</td>
+          <td><span class="tag tag-no">Not collected</span></td>
+          <td>—</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+        <tr>
+          <td>Device identifiers</td>
+          <td><span class="tag tag-no">Not collected</span></td>
+          <td>—</td>
+          <td><span class="tag tag-no">Never</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- What we collect -->
+  <section>
+    <h2><span class="icon" style="background:#E6F1FB;">📱</span> Information you enter in the app</h2>
+    <p>QuoteForge allows you to enter and store the following information <strong>locally on your device</strong>:</p>
+    <ul>
+      <li>Your business name, contact details, logo, and VAT number</li>
+      <li>Client names, company names, email addresses, and phone numbers</li>
+      <li>Estimate and invoice data including line items, prices, and totals</li>
+      <li>Saved service items and templates</li>
+    </ul>
+    <p>This information is stored exclusively using Apple's <strong>CoreData framework</strong> on your device. It is not uploaded to any server, cloud service, or third party.</p>
+  </section>
+
+  <!-- Email -->
+  <section>
+    <h2><span class="icon" style="background:#FAEEDA;">📧</span> Email sending</h2>
+    <p>When you choose to send an estimate by email, QuoteForge uses your device's built-in <strong>Mail app</strong> (via Apple's MessageUI framework). The email is composed and sent entirely through your own email account.</p>
+    <p>We do not have access to the content of emails you send, your email account credentials, or your contact list. The PDF attachment is generated on-device and passed directly to your Mail app.</p>
+  </section>
+
+  <!-- Photos -->
+  <section>
+    <h2><span class="icon" style="background:#FBEAF0;">🖼️</span> Photo library access</h2>
+    <p>QuoteForge may request access to your <strong>photo library</strong> solely to allow you to select a business logo. This access is optional — the app functions fully without it.</p>
+    <ul>
+      <li>We only access photos you explicitly select</li>
+      <li>Selected images are stored locally on your device only</li>
+      <li>We never scan, index, or upload your photo library</li>
+    </ul>
+  </section>
+
+  <!-- Third parties -->
+  <section>
+    <h2><span class="icon" style="background:#FCEBEB;">🔗</span> Third-party services</h2>
+    <p>QuoteForge does <strong>not</strong> integrate with any third-party analytics, advertising, crash reporting, or data collection services. There are no SDKs from Facebook, Google, Firebase, Mixpanel, or similar services embedded in this app.</p>
+    <p>The app does not display advertisements.</p>
+  </section>
+
+  <!-- Children -->
+  <section>
+    <h2><span class="icon" style="background:#EAF3DE;">👶</span> Children's privacy</h2>
+    <p>QuoteForge is a business tool intended for use by adults aged 18 and over. We do not knowingly collect any information from children under 13 years of age. If you believe a child has provided information through the app, please contact us and we will take appropriate steps.</p>
+  </section>
+
+  <!-- Your rights -->
+  <section>
+    <h2><span class="icon" style="background:#EEEDFE;">⚖️</span> Your rights (GDPR &amp; UK GDPR)</h2>
+    <p>As all data is stored locally on your device, you have full control at all times:</p>
+    <ul>
+      <li><strong>Access:</strong> All your data is visible within the app</li>
+      <li><strong>Delete:</strong> Delete individual records or uninstall the app to remove all data</li>
+      <li><strong>Portability:</strong> Export estimates as PDF at any time</li>
+      <li><strong>Correction:</strong> Edit any data directly within the app</li>
+    </ul>
+    <p>Since we do not collect or store any data on our servers, we are unable to retrieve, provide, or delete data that exists only on your device.</p>
+  </section>
+
+  <!-- Data retention -->
+  <section>
+    <h2><span class="icon" style="background:#F0F1F3;">🗓️</span> Data retention</h2>
+    <p>Your data is retained on your device for as long as the app is installed. When you delete the app, all locally stored data is permanently removed by iOS. We do not retain any copies.</p>
+    <p>If you use iCloud Backup, your app data may be included in your device backup according to <a href="https://www.apple.com/legal/privacy/" style="color:#2AABB3;">Apple's privacy policy</a>. This is controlled by your iOS settings, not by QuoteForge.</p>
+  </section>
+
+  <!-- Changes -->
+  <section>
+    <h2><span class="icon" style="background:#F0F9F6;">📝</span> Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    <p>For significant changes, we will include a notice in the app update release notes on the App Store.</p>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-card">
+    <h2>📬 Contact us</h2>
+    <p>If you have any questions about this Privacy Policy or your data, please contact us:</p>
+    <p><strong style="color:#fff;">MaximusDevStudio</strong></p>
+    <p>Email: <a href="mailto:privacy@maximusdevstudio.co.uk">privacy@maximusdevstudio.co.uk</a></p>
+    <p>Website: <a href="https://maximusdevstudio.co.uk">maximusdevstudio.co.uk</a></p>
+    <p style="margin-top:12px;font-size:12px;color:#6B7280;">
+      Registered in England &amp; Wales · Maximus &amp; Co Ltd
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 MaximusDevStudio · Maximus &amp; Co Ltd · All rights reserved</p>
+  <p style="margin-top:6px;">
+    <a href="https://maximusdevstudio.co.uk">Website</a> &nbsp;·&nbsp;
+    <a href="mailto:privacy@maximusdevstudio.co.uk">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
